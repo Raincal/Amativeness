@@ -1097,4 +1097,11 @@ function g_smilies_src ($img_src, $img, $siteurl){
 	return get_bloginfo('template_directory').'/images/smilies/'.$img;
 }
 	add_filter('smilies_src','g_smilies_src',1,10); 
+
+//gravatar头像
+function theme_get_avatar($avatar) {
+    $avatar = preg_replace('/.*\/avatar\/(.*)\?s=([\d]+)&.*/','<img class="avatar avatar-$2" src="http://gravatar.com/avatar/$1-$2" alt="" width="$2" height="$2" />',$avatar);
+    return $avatar;
+}
+add_filter( 'get_avatar', 'theme_get_avatar', 10, 3 );
 ?>

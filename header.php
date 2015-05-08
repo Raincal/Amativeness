@@ -75,7 +75,7 @@
 </header>
 <div id="information" class="info block">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="avatar" data-pinit="registered" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-                <p class="description"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">我永远不会试图去战胜一个纯傻逼，因为他会用他丰富的经验来打败我...</a></p>
+                <p class="description"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">Stay hungry，Stay foolish</a></p>
 </div>
 <div class="container" id="content">
 
