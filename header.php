@@ -46,7 +46,7 @@
 	<a href="<?php bloginfo('url');?>/wp-admin/" title="博客后台" class="houtai fa fa-user">后台</a>
 <?php endif; ?>	
 <div class="container">
-<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation" style="height:38px;">
 	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 </nav>
 <?php if ( is_single() ) : ?>
